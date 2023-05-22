@@ -1,5 +1,4 @@
 import React from 'react'
-import Conocimientos from '../components/conocimientos'
 import styled from '@emotion/styled'
 
 // conocmientos
