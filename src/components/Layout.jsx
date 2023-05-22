@@ -74,7 +74,7 @@ const Main=styled.main `
  
 `
 const Wage=styled.img `
- 
+ background-color: transparent;
 `
 
 

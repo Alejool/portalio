@@ -2,15 +2,13 @@ import React from 'react'
 import { useState } from 'react'
 
 
-
-
-//
 import styled from '@emotion/styled'
 
 //styled components
 const ListadoEducacion= styled.div `
  margin-block:6rem;
  overflow-x: hidden;
+
  
  
   @media (min-width: 768px){
@@ -34,18 +32,17 @@ const Educacion=styled.div `
   max-width:55rem;
   margin: 0 auto;
   margin-bottom: 2rem;
-  border:var(--beige) 1px solid;
+  border: 3px transparent solid;
+  border-radius: 0 0 20px 20px ;
+ 
   clip-path: ellipse(90% 100% at 60% 85%);
-  box-shadow: 0px 5px 11px -7px var(--blanco);
+  box-shadow: 0px 5px 9px -7px var(--blanco);
 
   div {
       background-color: var(--naranja);
     }
 
- 
-  
-  
-  
+
   &:nth-of-type(even){
     animation: formacionD 3s ;
   }
@@ -53,18 +50,14 @@ const Educacion=styled.div `
     animation: formacionI 2s ;
    
   }
- 
-  @media (min-width: 768px){
-
-    margin: 0;
-  }
 
   &:hover {
-    background-color:rgba(10, 18, 13,0.85);
+    background-color:rgba(10, 12, 13,0.85);
     clip-path: none;
+    border: ${props => props.color} 3px solid;
 
     div {
-      background-color: var(--rojo);
+      background-color:${props => props.color};
     }
 
     &::after {
@@ -76,6 +69,7 @@ const Educacion=styled.div `
       height:8.7rem;
       top:0;
       right: 0;
+      border-radius: 1rem;
       background-image: url(${props => props.imgActive});
       background-size:cover;
       background-position: center center;
@@ -84,6 +78,13 @@ const Educacion=styled.div `
     }
 
   }
+
+
+   
+  @media (min-width: 768px){
+    margin: 0;
+  }
+
 
   
  
@@ -106,13 +107,15 @@ const Educacion=styled.div `
 
   p {
    text-align: justify;
-   line-height: 1.3;
+   line-height: 1.5;
    background-color: var(--azul);
    padding: 2rem;
    font-size: 1.4rem;
+   font-weight: 100;
    margin: 0;
    height: auto;
-   min-height: 133px;
+   min-height: 120px;
+   border-radius: 0 0 20px 20px ;
    
   }
   i {
@@ -142,13 +145,14 @@ function Conocimientos({arrayeducacion}) {
         <ListadoEducacion>
 
           {arrayeducacion.map(educacion=>{
-            const {id, titulo, plataforma, descripcion, tiempo, imagen, duracion,color}= educacion;
+            const {id, titulo, plataforma, descripcion, tiempo, imagen, duracion,color, destacable}= educacion;
 
             return(
 
                 <Educacion
                   key={id}
                   imgActive={imagen}
+                  color={color}
                 >
                   <h3 >{titulo}</h3>
                   <Tiempo color={color}>
@@ -161,6 +165,9 @@ function Conocimientos({arrayeducacion}) {
                   </Tiempo >
 
                   <p>{descripcion}</p>
+                  <div>
+                      <span>{destacable}</span> 
+                  </div>
                   
                 </Educacion>
 

@@ -19,7 +19,7 @@ const Listado=styled.div `
   @media (min-width: 768px){
     display:grid ;
     grid-template-columns: repeat(2,50%);
-    gap: 1rem;
+    gap: 1.5rem;
     align-items:center;
     justify-content: center;
   }
@@ -47,6 +47,7 @@ const Myproyecto=styled.div `
   color: var(--blanco);
   line-height: 1.55;
   margin-bottom: 2rem;
+  box-shadow: .5px 1px 1px 1px var(--beige);
 
   background-repeat: no-repeat;
   background-size:  cover  ;
@@ -110,8 +111,11 @@ const Btn=styled.a `
   background-color: var(--beige);
   font-weight: bold;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 20px;
+  font-weight:700;
+
   margin-bottom: 1.4rem;
+
 `
 
 const Repo=styled.div `
@@ -187,7 +191,8 @@ function Proyectos() {
 
                 {tarjetaActiva===id &&
                   <Info>
-                    {demo && <Btn target="_blank" href={demo}>Ver demo</Btn>}
+                    {demo && 
+                    <Btn target="_blank" href={demo}>Ver demo</Btn>}
                     <Btn target="_blank" href={github}>Ver repositorio</Btn>
                   </Info>
                 

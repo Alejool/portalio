@@ -98,7 +98,7 @@ function Index() {
 
         <Cv>
           <a onClick={handleDownload}>
-            Descargar CV
+            Descargar CV <i className="bi bi-arrow-down-short"></i>
           </a>
         </Cv>
 
