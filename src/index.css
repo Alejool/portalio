@@ -1,0 +1,144 @@
+:root {
+ --amarillo:#F9D949;
+ --blanco:#F0F0F0;
+ --azul:#081e53a9;
+ --beige:#FFF8D6;
+ --naranja:#b8621bb2;
+  --gris:#0f0f0f7c;
+  --rojo:#c93636cc;
+  --verde:#34832191;
+ /* fuentes*/
+ --principal: 'Pathway Extreme', sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body {
+  background-image: linear-gradient(rgba(2, 2, 2, 0.71), rgba(0, 0, 0, 0.714)), url('/webp/bg.webp');
+  background-repeat: no-repeat;
+  background-size:  cover  ;
+  background-position: center;
+  margin: 0;
+  font-family: var(--principal);
+  line-height: 1.67;
+  font-size: 1.5rem;
+  
+}
+
+
+
+
+img {
+  display: block;
+  
+}
+
+a{
+  text-decoration: none;
+  color: var(--azul);
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+
+/* keyframes */
+
+@keyframes fade-in {
+  from {
+    scale:0.3;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes habilidad {
+  from{
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes opacidad {
+  0% {
+    opacity:0.3;
+    transform: translateY(-10rem);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-50rem);
+  }
+ 
+  100% {
+    transform: translateX(50rem);
+   
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(40%);
+    
+  }
+  50% {
+    transform: translateY(0);
+    
+  }
+  100% {
+     opacity: 1;
+  }
+}
+
+@keyframes formacionD {
+  
+    0% {
+      transform: translateX(30rem);
+    }
+   
+    100% {
+      transform: translateX(0rem);
+     
+    }
+  }
+
+  @keyframes formacionI{
+  
+    0% {
+      transform: translateX(-30rem);
+    }
+   
+    100% {
+      transform: translateX(0rem);
+     
+    }
+  }
+
+ 
+
