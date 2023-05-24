@@ -90,7 +90,7 @@ const Educacion=styled.div `
 
     &::before {
       margin-top: -5px;
-      background:linear-gradient(160deg, var(--gris) 35%, ${props => props.color} 85%);
+      background:linear-gradient(160deg, var(--gris) 30%, ${props => props.color} 77%);
       width: 8.7rem;
       height: 5rem;
       

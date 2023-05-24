@@ -176,9 +176,9 @@ function Proyectos() {
               
                        return(
                          <img 
-                         
                           key={habilidad.id} 
-                          src={habilidad.img} alt='imagen'/>
+                          src={habilidad.img} 
+                          alt={`imagen de ${habilidad.nombre}`}/>
                        )
               
                      })

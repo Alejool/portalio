@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import Conocimientos from '../components/Conocimientos'
+import Conocimientos from '../components/conocimientos'
 
 // conocmientos
 import {arrayeducacion} from '../js/Conocimientos'

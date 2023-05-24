@@ -116,7 +116,9 @@ export default function Habilidad() {
                   <Evidencias 
                     key={index}>
                       <p>{texto}</p>
-                    <img src={ruta}/>
+                    <img 
+                      src={ruta}
+                      alt={`evidencia de${nombre}`}/>
                   </Evidencias>
                 )
                

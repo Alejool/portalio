@@ -124,7 +124,8 @@ function Layout() {
               target='_blank'>
 
             <img 
-              src={img}/>
+              src={img}
+              alt='imagen personal'/>
             </a>
         )})}
 
