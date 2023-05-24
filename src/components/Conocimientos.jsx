@@ -50,7 +50,7 @@ const Educacion=styled.div `
     }
 
 
-  @media (min-width: 1024px){
+  @media (min-width: 1200px){
     &::before {
     content: '';
     position: absolute;
