@@ -77,7 +77,7 @@ const Educacion=styled.div `
 
 
   &:hover {
-    @media (min-width: 1024px){
+    @media (min-width: 1200px){
       clip-path: ellipse(85% 100% at 60% 86%);
     }
 
