@@ -39,10 +39,11 @@ const Educacion=styled.div `
     &::before {
     content: '';
     position: absolute;
+    background:-moz-linear-gradient(var(--gris) );
     width: 0;
     height: 0;
     top: 0;
-    transition: .2s ease-in-out ;
+    transition: .2s ease-in;
 
   }
   }
@@ -63,8 +64,6 @@ const Educacion=styled.div `
     animation: formacionI 2s;
   }
 
-
-
   &:hover {
     @media (min-width: 1024px){
       clip-path: ellipse(90% 100% at 60% 86%);
@@ -78,9 +77,9 @@ const Educacion=styled.div `
     }
 
     &::before {
-      background:-moz-linear-gradient(-65deg, transparent 5%, ${props => props.color} 50%);
+      background:-moz-linear-gradient(-65deg, white 3%, ${props => props.color} 50%);
       width: 7.3rem;
-       height: 3.6rem;
+       height: 3.4rem;
        
        
       
