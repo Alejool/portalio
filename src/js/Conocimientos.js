@@ -37,7 +37,7 @@ const arrayeducacion=[
     titulo: 'Desarrollo web completo',
     plataforma: 'Udemy',
     duracion:'83 hrs',
-    descripcion:'En este curso completo de Desarrollo Web y Aplicaciones Dinámicas con PHP y MySQL, estoy aprendiendo los fundamentos y las mejores prácticas para construir sitios web sencillos estáticos y dinámicos con PHP. En este curso, se destaca el uso de módulos y la metodología BEM para organizar y estructurar el código de manera eficiente. Además, mejoré mis habilidades en JavaScript moderno (ES6) para mejorar la interactividad y funcionalidad de mis aplicaciones web. Estoy emocionado/a de seguir aprendiendo y aplicando estas tecnologías para crear sitios web dinámicos y de calidad.',
+    descripcion:'En este curso completo de Desarrollo Web y Aplicaciones Dinámicas con PHP y MySQL, estoy aprendiendo los fundamentos y las mejores prácticas para construir sitios web sencillos estáticos y dinámicos con PHP. En este curso, se destaca el uso de módulos y la metodología BEM para organizar y estructurar el código de manera eficiente. Además, mejoré mis habilidades en JavaScript moderno (ES6) para mejorar la interactividad y funcionalidad de mis aplicaciones web.',
     tiempo:
       {
         desde: 'diciembre 2022 ',
@@ -64,7 +64,7 @@ const arrayeducacion=[
     id:4,
     titulo: 'css la guia completa',
     plataforma: 'udemy',
-    descripcion:'En ese curso, fortalecí mis habilidades en HTML5, CSS3, Sass y JavaScript a través de la realización de diversos proyectos estáticos. Tuve la oportunidad de practicar y aplicar mis conocimientos en un entorno práctico, lo que me permitió mejorar mis habilidades en desarrollo web. Además, aprendí a utilizar herramientas como Gulp y NPM para agilizar el proceso de desarrollo y mejorar mi eficiencia en la creación de proyectos. Estoy satisfecho/a de haber mejorado mis habilidades y convertirme en un desarrollador web más competente..',
+    descripcion:'En ese curso, fortalecí mis habilidades en HTML5, CSS3, Sass y JavaScript a través de la realización de diversos proyectos estáticos. Tuve la oportunidad de practicar y aplicar mis conocimientos en un entorno práctico, lo que me permitió mejorar mis habilidades en desarrollo web. Además, aprendí a utilizar herramientas como Gulp y NPM para agilizar el proceso de desarrollo y mejorar mi eficiencia en la creación de proyectos. ',
     duracion:'37 hrs',
     tiempo:
       {

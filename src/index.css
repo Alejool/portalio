@@ -13,11 +13,11 @@
 
 html{
   font-size: 62.5%;
+ 
 }
 
 body {
   background-image: linear-gradient(rgba(2, 2, 2, 0.71), rgba(0, 0, 0, 0.714)), url('/webp/bg.webp');
-  background-repeat: no-repeat;
   background-size:  cover  ;
   background-position: center;
   margin: 0;
@@ -136,6 +136,18 @@ p {
    
     100% {
       transform: translateX(0rem);
+     
+    }
+  }
+
+  @keyframes opacidad{
+  
+    0% {
+      opacity: 0;;
+    }
+   
+    100% {
+      opacity: 1;
      
     }
   }

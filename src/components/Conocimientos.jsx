@@ -9,8 +9,6 @@ const ListadoEducacion= styled.div `
  margin-block:6rem;
  overflow-x: hidden;
 
- 
- 
   @media (min-width: 768px){
      display: grid;
      grid-template-columns: repeat(2, 1fr);
@@ -25,43 +23,71 @@ const Educacion=styled.div `
   position: relative;
   background-color: var(--gris  );
   min-height:20rem ;
-  text-align: center;
   margin-bottom: 2rem;
   transition: transform .5s ease-in-out;
   transition: background-color .5s ease-in;
   max-width:55rem;
   margin: 0 auto;
   margin-bottom: 2rem;
-  border: 3px transparent solid;
-  border-radius: 0 0 20px 20px ;
- 
-  clip-path: ellipse(90% 100% at 60% 85%);
+  border-radius: 2px 2px 10px 10px ;
   box-shadow: 0px 5px 9px -7px var(--blanco);
+  transform: translateX(0);
+  border: 2px var(--gris) solid;
 
-  div {
-      background-color: var(--naranja);
-    }
+
+  @media (min-width: 1024px){
+    &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    transition: .2s ease-in-out ;
+
+  }
+  }
+  
+  
+ 
+  div
+  {
+    background-color: var(--naranja);
+  }
 
 
   &:nth-of-type(even){
-    animation: formacionD 3s ;
+    animation: formacionD 3s;
   }
+
   &:nth-of-type(odd){
-    animation: formacionI 2s ;
-   
+    animation: formacionI 2s;
   }
+
+
 
   &:hover {
+    @media (min-width: 1024px){
+      clip-path: ellipse(90% 100% at 60% 86%);
+      
+    }
+    border: ${props => props.color} 2px solid;
     background-color:rgba(10, 12, 13,0.85);
-    clip-path: none;
-    border: ${props => props.color} 3px solid;
-
+    
     div {
       background-color:${props => props.color};
     }
 
+    &::before {
+      background:-moz-linear-gradient(-65deg, transparent 5%, ${props => props.color} 50%);
+      width: 7.3rem;
+       height: 3.6rem;
+       
+       
+      
+    }
+
     &::after {
-      animation: rotateAnimation 1s ;
+      animation: rotateAnimation 1s;
       position: absolute;
       content: '';
       display: block;
@@ -74,20 +100,16 @@ const Educacion=styled.div `
       background-size:cover;
       background-position: center center;
       background-repeat: no-repeat;
-      
     }
+
 
   }
 
-
-   
   @media (min-width: 768px){
     margin: 0;
   }
 
 
-  
- 
   h3 {
     font-weight: normal;
     display: flex;
@@ -99,6 +121,7 @@ const Educacion=styled.div `
     line-height: 1.3;
   }
   
+
   span {
     display: block;
     padding: 0 2rem;
@@ -106,8 +129,7 @@ const Educacion=styled.div `
   }
 
   p {
-   text-align: justify;
-   line-height: 1.5;
+   line-height: 1.6;
    background-color: var(--azul);
    padding: 2rem;
    font-size: 1.4rem;
@@ -115,9 +137,9 @@ const Educacion=styled.div `
    margin: 0;
    height: auto;
    min-height: 120px;
-   border-radius: 0 0 20px 20px ;
-   
+   border-radius: 0 0 8px 8px ;
   }
+
   i {
     margin-right: 7px;
   }
