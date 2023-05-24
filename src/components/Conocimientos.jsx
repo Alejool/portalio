@@ -34,59 +34,7 @@ const Educacion=styled.div `
   transform: translateX(0);
   border: 2px var(--gris) solid;
 
-
-  @media (min-width: 1024px){
-    &::before {
-    content: '';
-    position: absolute;
-    background:-moz-linear-gradient(var(--gris) );
-    width: 0;
-    height: 0;
-    top: 0;
-    transition: .2s ease-in;
-
-  }
-  }
-  
-  
- 
-  div
-  {
-    background-color: var(--naranja);
-  }
-
-
-  &:nth-of-type(even){
-    animation: formacionD 3s;
-  }
-
-  &:nth-of-type(odd){
-    animation: formacionI 2s;
-  }
-
-  &:hover {
-    @media (min-width: 1024px){
-      clip-path: ellipse(90% 100% at 60% 86%);
-      
-    }
-    border: ${props => props.color} 2px solid;
-    background-color:rgba(10, 12, 13,0.85);
-    
-    div {
-      background-color:${props => props.color};
-    }
-
-    &::before {
-      background:-moz-linear-gradient(-65deg, white 3%, ${props => props.color} 50%);
-      width: 7.3rem;
-       height: 3.4rem;
-       
-       
-      
-    }
-
-    &::after {
-      animation: rotateAnimation 1s;
+  &::after {
       position: absolute;
       content: '';
       display: block;
@@ -102,11 +50,62 @@ const Educacion=styled.div `
     }
 
 
+  @media (min-width: 1024px){
+    &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    transition: .1s ease-in;
+ 
+   }
+  }
+  
+  div
+  {
+    background-color: var(--naranja);
   }
 
-  @media (min-width: 768px){
-    margin: 0;
+  &:nth-of-type(even){
+    animation: formacionD 3s;
   }
+
+  &:nth-of-type(odd){
+    animation: formacionI 2s;
+  }
+
+
+  &:hover {
+    @media (min-width: 1024px){
+      clip-path: ellipse(85% 100% at 60% 86%);
+    }
+
+    border: ${props => props.color} 2px solid;
+    background-color:rgba(10, 12, 13,0.85);
+    
+    div {
+      background-color:${props => props.color};
+    }
+
+    &::before {
+      margin-top: -5px;
+      background:linear-gradient(160deg, var(--gris) 35%, ${props => props.color} 85%);
+      width: 8.7rem;
+      height: 5rem;
+      
+     
+    }
+
+    &::after {
+      animation: aparecer 1s;
+    }
+
+   
+
+
+  }
+
 
 
   h3 {
