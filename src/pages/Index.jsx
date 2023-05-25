@@ -8,7 +8,7 @@ import { arrayTarjetas} from '../js/Tarjetas.js';
 import { NavLink } from 'react-router-dom';
 
 /* iconos */
-import {AiOutlineDownload} from 'react-icons/Ai'
+import {AiOutlineDownload} from 'react-icons/ai'
 
 
 /**fotos */

@@ -76,7 +76,7 @@ const arrayeducacion=[
     
   },
   {
-    id:4,
+    id:5,
     titulo: 'Diplomado WEB ',
     plataforma: 'Mintic ',
     descripcion:'En ese curso, fortalecí mis habilidades en HTML5, CSS3, Sass y JavaScript a través de la realización de diversos proyectos estáticos. Tuve la oportunidad de practicar y aplicar mis conocimientos en un entorno práctico, lo que me permitió mejorar mis habilidades en desarrollo web. Además, aprendí a utilizar herramientas como Gulp y NPM para agilizar el proceso de desarrollo y mejorar mi eficiencia en la creación de proyectos. ',
@@ -86,7 +86,7 @@ const arrayeducacion=[
         desde: 'abril 2022',
         hasta: 'septiembre 2022'
       },
-      imagen:'/webp/habilidades/css.webp',
+      imagen:'/webp/cursos/mintic.webp',
     color:'#bf900f',
     
   },

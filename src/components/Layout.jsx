@@ -90,15 +90,24 @@ function Layout() {
     // Simular un tiempo de carga de 2 segundos
     setTimeout(() => {
       setIsLoading(false);
-    }, 5000);
+    }, 2000);
   }, []);
 
-  if (isLoading) {
+  if (isLoading && rutaActual==='/') {
     return (
      <div className='spinner'>
       <span className="loader2"></span>
      </div>
       );
+  }
+  else if (isLoading && rutaActual!=='/'){
+   return(
+    <div 
+    className='spinner'>
+      <span className="loader"></span>
+  </div>
+
+   )
   }
 
  

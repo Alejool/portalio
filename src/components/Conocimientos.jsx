@@ -7,7 +7,7 @@ import styled from '@emotion/styled'
 /*iconos*/
 import {BiTimeFive} from 'react-icons/Bi'
 import {SlCalender} from 'react-icons/Sl'
-import { Activity } from 'react-bootstrap-icons'
+
 
 //styled components
 const ListadoEducacion= styled.div `
