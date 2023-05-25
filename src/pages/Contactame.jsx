@@ -2,6 +2,8 @@ import { useState, useRef } from "react";
 import styled from "@emotion/styled"
 import { useForm } from '@formspree/react';
 import { redirect, useNavigate  } from "react-router-dom";
+import { GrSend } from 'react-icons/gr'
+
 
 
 
@@ -36,6 +38,7 @@ const Form = styled.form`
     text-align: center;
     text-transform: uppercase;
   }
+  
 `;
 
 const Fieldset =styled.fieldset `
@@ -80,14 +83,7 @@ const Button = styled.button`
   border-radius: 4px;
   font-size: 1.9rem;
   cursor: pointer;
-  
   width: 100%;
-
-  i {
-    margin-left: 5px;
-  }
-
- 
 
  
 `;
@@ -115,6 +111,11 @@ const Alerta=styled.div `
     }
   }
   } */
+`
+
+const Icono=styled(GrSend) `
+  margin-left:5px ;
+  margin-bottom: -3px;
 `
 
 
@@ -218,9 +219,9 @@ export default function Contactame() {
               rows={7} placeholder="Te contacto para..."/>
            </Campo>
 
-           <Button type="submit"   >
+           <Button type="submit" >
              Enviar
-            <i className="bi bi-send-check"></i>
+             <Icono/>
           </Button>
           
           

@@ -7,6 +7,9 @@ import Tarjetas from '../components/Tarjetas'
 import { arrayTarjetas} from '../js/Tarjetas.js';
 import { NavLink } from 'react-router-dom';
 
+/* iconos */
+import {AiOutlineDownload} from 'react-icons/Ai'
+
 
 /**fotos */
 import cv from '/webp/fotoPersonal.webp'
@@ -71,17 +74,22 @@ const Cv=styled.div `
   
 `
 
+const Icono=styled(AiOutlineDownload)`
+  margin-left: 5px;
+  margin-bottom: -3px;
+`
+
 
 
 function Index() {
 
-  
-    const handleDownload = () => {
-      const link = document.createElement('a');
+  const handleDownload = () => {
+    const link = document.createElement('a');
       link.href = cv; // Reemplaza con la ruta correcta de tu CV
       link.download = 'cv_alejandro.pdf'; // Nombre de archivo que se descargará
       link.click();
     };
+
   return (
     <div>
       
@@ -98,7 +106,8 @@ function Index() {
 
         <Cv>
           <a onClick={handleDownload}>
-            Descargar CV <i className="bi bi-arrow-down-short"></i>
+            Descargar CV 
+            <Icono/>
           </a>
         </Cv>
 

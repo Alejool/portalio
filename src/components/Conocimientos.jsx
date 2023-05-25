@@ -4,6 +4,11 @@ import { useState } from 'react'
 
 import styled from '@emotion/styled'
 
+/*iconos*/
+import {BiTimeFive} from 'react-icons/Bi'
+import {SlCalender} from 'react-icons/Sl'
+import { Activity } from 'react-bootstrap-icons'
+
 //styled components
 const ListadoEducacion= styled.div `
  margin-block:6rem;
@@ -61,12 +66,6 @@ const Educacion=styled.div `
  
    }
   }
-  
-  div
-  {
-    background-color: var(--naranja);
-  }
-
   &:nth-of-type(even){
     animation: formacionD 3s;
   }
@@ -83,10 +82,11 @@ const Educacion=styled.div `
 
     border: ${props => props.color} 2px solid;
     background-color:rgba(10, 12, 13,0.85);
-    
-    div {
+
+    div:nth-of-type(2){
       background-color:${props => props.color};
     }
+    
 
     &::before {
       margin-top: -5px;
@@ -101,32 +101,70 @@ const Educacion=styled.div `
       animation: aparecer 1s;
     }
 
-   
-
-
   }
 
 
 
   h3 {
     font-weight: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7rem;
-    margin: 0 9rem 0 0;
-    padding: 1rem;
+    margin: 0;
+    padding: 2rem 0 0 1rem;
     line-height: 1.3;
+    display: block;
+    
   }
   
-
+  
   span {
     display: block;
     padding: 0 2rem;
   
   }
+ 
 
-  p {
+
+`
+
+const Title= styled.div `
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 9rem 0 0;
+  height: 8.5rem;
+`
+
+const Plataforma=styled.p`
+      display: block;
+      margin: 0 auto;
+      margin-top: .6rem;
+      padding:.2rem 2rem;
+      border-radius:2rem;
+      
+      &:hover {
+        background-color:${props => props.color};
+      }
+`
+const Tiempo=styled.div `
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--naranja);
+
+   
+`
+
+const IconoCalendar=styled(SlCalender)`
+  margin-bottom: -2px;
+  margin-right: 4px;
+`
+const IconoTime=styled(BiTimeFive)`
+  margin-bottom: -2px;
+  margin-right: 4px;
+`
+const Info=styled.div `
+
+  p{
    line-height: 1.6;
    background-color: var(--azul);
    padding: 2rem;
@@ -138,24 +176,12 @@ const Educacion=styled.div `
    border-radius: 0 0 8px 8px ;
   }
 
-  i {
-    margin-right: 7px;
-  }
-
- 
 `
-const Tiempo=styled.div `
-  font-size: 1.3rem;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: var(--naranja);
 
-   &:hover {
-      background-color: ${props => props.color};
-    }
 
- 
-`
+
+
+
 
 function Conocimientos({arrayeducacion}) {
 
@@ -174,20 +200,26 @@ function Conocimientos({arrayeducacion}) {
                   imgActive={imagen}
                   color={color}
                 >
-                  <h3 >{titulo}</h3>
+                  <Title>
+                    <h3 >{titulo}</h3>
+                    <Plataforma color={color}>{plataforma} </Plataforma>
+                  </Title>
+
                   <Tiempo color={color}>
                     <span> 
-                      <i className="bi bi-calendar-event"></i>{tiempo.desde} - {tiempo.hasta}</span>
-
+                       <IconoCalendar/> 
+                      {tiempo.desde} - {tiempo.hasta}</span>
                     <span>
-                    <i className="bi bi-clock-history"></i>
+
+                     <IconoTime/> 
                     {duracion}</span>
                   </Tiempo >
 
-                  <p>{descripcion}</p>
-                  <div>
-                      <span>{destacable}</span> 
-                  </div>
+                  
+                  <Info>
+                   <p>{descripcion}</p>
+                    <span>{destacable}</span> 
+                  </Info>
                   
                 </Educacion>
 
