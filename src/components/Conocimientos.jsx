@@ -5,8 +5,8 @@ import { useState } from 'react'
 import styled from '@emotion/styled'
 
 /*iconos*/
-import {BiTimeFive} from 'react-icons/Bi'
-import {SlCalender} from 'react-icons/Sl'
+import {BiTimeFive} from 'react-icons/bi'
+import {SlCalender} from 'react-icons/sl'
 
 
 //styled components
