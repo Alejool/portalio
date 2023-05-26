@@ -29,6 +29,7 @@ const MisProyectos=[
         {nombre:'javascript'},
       ],
     bg:'/webp/proyectos/portafolio.webp',
+    demo:'https://portalio-57ei-git-main-alejool.vercel.app/',
     github:'https://github.com/Alejool/portalio.git',
     info:"Es mi portafolio donde expongo toda la información  tanto personal, como técnica que me compete. Esta creado con react principalmnete, el manejo de rutas con la libreria react-router-dom, y styled-components para crear  estilos personalizados para cada componente, también las tecnologias que abajo se visualizan, se destaca:  react 18.2.0, gulp 4.0.2, react-router-dom 6.11.0, vite 4.3.2,  @emotion/styled 11.10.8, y npm con la versión de nodejs 18.13.0 ",
   },

@@ -105,7 +105,7 @@ function Layout() {
     <div 
     className='spinner'>
       <span className="loader"></span>
-  </div>
+    </div>
 
    )
   }
@@ -113,7 +113,6 @@ function Layout() {
  
   return (
     <>
-
 
      {rutaActual==='/' ?
       <HeaderP>

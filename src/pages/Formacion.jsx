@@ -20,14 +20,11 @@ const Title=styled.h2 `
 `
 
 
-
 export default function Formacion() {
   return (
     <div>
       <Title>Formación acádemica</Title>
       <Conocimientos arrayeducacion={arrayeducacion}/>
-
-
     </div>
   )
 }

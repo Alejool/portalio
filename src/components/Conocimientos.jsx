@@ -5,8 +5,8 @@ import { useState } from 'react'
 import styled from '@emotion/styled'
 
 /*iconos*/
-import {BiTimeFive} from 'react-icons/bi'
-import {SlCalender} from 'react-icons/sl'
+import {BiTimeFive} from 'react-icons/Bi'
+import {SlCalender} from 'react-icons/Sl'
 
 
 //styled components
@@ -19,7 +19,7 @@ const ListadoEducacion= styled.div `
      grid-template-columns: repeat(2, 1fr);
      justify-content: center;
      align-items: center;
-     gap: 2rem;
+     gap: 1.5rem;
   }
 
   
@@ -38,6 +38,7 @@ const Educacion=styled.div `
   box-shadow: 0px 5px 9px -7px var(--blanco);
   transform: translateX(0);
   border: 2px var(--gris) solid;
+  width: 100%;
 
   &::after {
       position: absolute;
@@ -63,6 +64,7 @@ const Educacion=styled.div `
     height: 0;
     top: 0;
     transition: .1s ease-in;
+    border-radius: 0 0 3px 0;
  
    }
   }
@@ -90,20 +92,15 @@ const Educacion=styled.div `
 
     &::before {
       margin-top: -5px;
-      background:linear-gradient(160deg, var(--gris) 30%, ${props => props.color} 77%);
+      background:linear-gradient(160deg, var(--gris) 33%, ${props => props.color} 77%);
       width: 8.7rem;
-      height: 5rem;
-      
-     
+      height: 5rem;      
     }
 
     &::after {
       animation: aparecer 1s;
     }
-
   }
-
-
 
   h3 {
     font-weight: normal;
@@ -114,15 +111,6 @@ const Educacion=styled.div `
     
   }
   
-  
-  span {
-    display: block;
-    padding: 0 2rem;
-  
-  }
- 
-
-
 `
 
 const Title= styled.div `
@@ -163,16 +151,31 @@ const IconoTime=styled(BiTimeFive)`
   margin-right: 4px;
 `
 const Info=styled.div `
+  height: 15rem;
+  background-color: var(--azul);
+  padding: 2rem 1rem;
+  font-size: 1.2rem;
+
+  @media (min-width: 768px){
+    height: 23rem;
+  }
+  @media (min-width: 1024px){
+    height: 17rem;
+  }
+  
+  span {
+    font-weight: 600;
+    display: inline;
+    color: var(--beige);
+    padding: 0 5px 0 0;
+  }
 
   p{
+    padding-block: 3px;
    line-height: 1.6;
-   background-color: var(--azul);
-   padding: 2rem;
-   font-size: 1.4rem;
    font-weight: 100;
    margin: 0;
    height: auto;
-   min-height: 120px;
    border-radius: 0 0 8px 8px ;
   }
 
@@ -217,8 +220,9 @@ function Conocimientos({arrayeducacion}) {
 
                   
                   <Info>
-                   <p>{descripcion}</p>
-                    <span>{destacable}</span> 
+                   <p> <span>Aprendizaje: </span> {descripcion[1]}</p>
+                  {descripcion[2] && <p> <span>Adicional: </span>{descripcion[2]}</p>} 
+                   <p> <span>Descripción: </span>{descripcion[3]}</p>
                   </Info>
                   
                 </Educacion>
