@@ -120,7 +120,9 @@ function Tarjetas({tarjetas}) {
              {
               tarjetaActiva!==indice &&
               <img src={img} 
-              alt='imagen fondo tarjeta'/>
+              alt='imagen fondo tarjeta'
+              height='auto'
+              width='auto'/>
              } 
             </Card>
 

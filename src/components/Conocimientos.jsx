@@ -184,10 +184,7 @@ const Info=styled.div `
 
 
 
-
-
 function Conocimientos({arrayeducacion}) {
-
   
   return (
     <div>

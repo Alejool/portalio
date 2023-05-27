@@ -90,7 +90,7 @@ function Layout() {
     // Simular un tiempo de carga de 2 segundos
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 700);
   }, []);
 
   if (isLoading && rutaActual==='/') {
@@ -118,18 +118,25 @@ function Layout() {
       <HeaderP>
         <Flex>
           <NavLink>
-            <Logo src={logo}/>
+            <Logo src={logo} 
+            aria-label="logo que funciona como enlace para regresar al inicio" 
+            alt='logo portafolio'/>
           </NavLink>
-          <FotoPersonal src={fotoPersonal}/>
+          <FotoPersonal src={fotoPersonal} alt='foto personal'
+          height='250px'
+          width='250px'/>
           
         </Flex>
-        <Wage src={svg}/>
+        <Wage src={svg} 
+          alt='wage del header'
+          height='auto'
+          width='auto'/>
       </HeaderP>
 
       :
       
       <NavLink>
-        <Logo src={logo}/>
+        <Logo src={logo} alt='logo portafolio'/>
       </NavLink>
 
     

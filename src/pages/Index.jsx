@@ -86,7 +86,7 @@ function Index() {
   const handleDownload = () => {
     const link = document.createElement('a');
       link.href = cv; // Reemplaza con la ruta correcta de tu CV
-      link.download = 'cv_alejandro.pdf'; // Nombre de archivo que se descargará
+      link.download = '.pdf'; // Nombre de archivo que se descargará
       link.click();
     };
 
