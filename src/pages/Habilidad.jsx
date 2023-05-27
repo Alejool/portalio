@@ -102,7 +102,10 @@ export default function Habilidad() {
           return (
           <HabilidadMostrar key={id} >
             
-            <Icono src={img}></Icono>
+            <Icono 
+              src={img}
+              height='150px'
+              width='150px'/>
 
             <Seccion style={{backgroundColor:color}}>
 
@@ -118,6 +121,8 @@ export default function Habilidad() {
                       <p>{texto}</p>
                     <img 
                       src={ruta}
+                      height='auto'
+                      width='250px'
                       alt={`evidencia de${nombre}`}/>
                   </Evidencias>
                 )

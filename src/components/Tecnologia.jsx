@@ -92,7 +92,12 @@ export default function Tecnologia() {
                 onMouseOut={handleMouseOut} 
                 >
                 {tarjetaActiva!==id &&
-                <Imagen src={img}></Imagen>}
+                <Imagen 
+                  src={img}
+                  height='120px'
+                  width='120px'
+                  alt={`Logo de ${nombre}`} />
+                }
 
                 {tarjetaActiva === id &&
                   <div>
