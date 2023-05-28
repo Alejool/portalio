@@ -13,7 +13,7 @@ const MisProyectos=[
       ],
     bg:'/webp/proyectos/cotizador.webp',
     github:'https://github.com/Alejool/cotizador.git',
-    demo:'https://cotizador-u1q6-67v7tz3zr-alejool.vercel.app/',
+    demo:'https://cotizador-l4d6.vercel.app/',
     info:'Este proyecto consiste en una aplicación creada con React y Vite que permite cotizar las 15 criptomonedas más utilizadas a las monedas de los países de habla hispana. Para lograrlo, se utiliza la información proporcionada por dos APIs. Se destaca @emotion/styled 11.10.6, vite 4.3.2, react 18.2.0',
    
   },
@@ -29,7 +29,7 @@ const MisProyectos=[
         {nombre:'javascript'},
       ],
     bg:'/webp/proyectos/portafolio.webp',
-    demo:'https://portalio-57ei-git-main-alejool.vercel.app/',
+    demo:'https://portalio-57ei.vercel.app/',
     github:'https://github.com/Alejool/portalio.git',
     info:"Es mi portafolio donde expongo toda la información  tanto personal, como técnica que me compete. Esta creado con react principalmnete, el manejo de rutas con la libreria react-router-dom, y styled-components para crear  estilos personalizados para cada componente, también las tecnologias que abajo se visualizan, se destaca:  react 18.2.0, gulp 4.0.2, react-router-dom 6.11.0, vite 4.3.2,  @emotion/styled 11.10.8, y npm con la versión de nodejs 18.13.0 ",
   },
@@ -64,21 +64,6 @@ const MisProyectos=[
     github:'https://github.com/Alejool/BIENESRAICES-MVC.git',
     demo:'https://raices-proyecto.000webhostapp.com/',
     info:'Es proyecto de base completo dinámico que integra las tecnologias que abajo se muestran, el objetivo fue crear una parte para que la visualizara el cliente comúny una parte admin que perimitiera controlar el manejo de los datos de las propiedades, vendedores y el manejo de estosdesde eliminar, crear o editar. Se destacan: sass 1.58.3, gulp 4.0.2, php 8.2.3 y mysql  8.0.32, fue realizado en base al curso del tutor juan de la torre (udemy)',
-   
-  },
-  {
-    id:5,
-    nombre:'el gávilan ',
-    tecnologiasUsadas:
-      [
-        {nombre:'html'},
-        {nombre:'css'},
-        {nombre:'git'},
-      ],
-    bg:'/webp/proyectos/gavilan.webp',
-    github:'https://github.com/Alejool/BIENESRAICES-MVC.git',
-    demo:'',
-    info:'Sitio web estático para la presentación de un restaurante, utilizando HTML5 y CSS3. El sitio web consta de cuatro secciones estáticas que permiten a los usuarios conocer más acerca del restaurante, su menú, su historia y su ubicación. Se incluyen imágenes atractivas y un diseño intuitivo que facilita la navegación del usuario.En general, el proyecto demuestra una habilidad para crear sitios web atractivos y sencillos.',
    
   },
   {
