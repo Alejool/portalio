@@ -11,8 +11,8 @@ import { NavLink } from 'react-router-dom';
 import {AiOutlineDownload} from 'react-icons/ai'
 
 
-/**fotos */
-import cv from '/webp/fotoPersonal.webp'
+/**fotos  y cv*/
+import cv from '/cv.pdf'
 
 
 const Main=styled.main `
@@ -86,7 +86,7 @@ function Index() {
   const handleDownload = () => {
     const link = document.createElement('a');
       link.href = cv; // Reemplaza con la ruta correcta de tu CV
-      link.download = '.pdf'; // Nombre de archivo que se descargará
+      link.download = 'cvAlejandro.pdf'; // Nombre de archivo que se descargará
       link.click();
     };
 

@@ -117,9 +117,10 @@ const Title= styled.div `
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-weight:normal;
   justify-content: center;
-  margin: 0 9rem 0 0;
-  height: 8.5rem;
+  margin: 0 8.5rem 0 0;
+  min-height: 8.7rem;
 `
 
 const Plataforma=styled.p`
@@ -151,14 +152,12 @@ const IconoTime=styled(BiTimeFive)`
   margin-right: 4px;
 `
 const Info=styled.div `
-  height: 15rem;
+  max-height: 28rem;
   background-color: var(--azul);
   padding: 2rem 1rem;
   font-size: 1.2rem;
 
-  @media (min-width: 768px){
-    height: 23rem;
-  }
+ 
   @media (min-width: 1024px){
     height: 17rem;
   }

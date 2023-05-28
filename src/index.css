@@ -1,8 +1,4 @@
-@font-face {
-  font-family: 'Principal';
-  src: url('../fonts/Principal.ttf') format('truetype');
-  /* O utiliza format('woff') si la fuente está en formato WOFF */
-}
+
 :root {
  --amarillo:#F9D949;
  --blanco:#F0F0F0;
@@ -13,7 +9,7 @@
   --rojo:#c93636cc;
   --verde:#34832191;
  /* fuentes*/
- --principal: 'Principal', sans-serif;
+ --principal: 'Montserrat', sans-serif;
 }
 
 html{
